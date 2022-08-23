@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>APPRENDRE LE HTML</title>
+	<style>
+		body {
+			background-color: rgba(63, 114, 161);
+		}
+		.content {
+			background-color: rgb(53, 71, 93);
+			width: 550px;
+			margin: auto;
+			padding: 20px;
+			border: 3px solid rgb(53, 71, 93);
+			margin-top: 30px;
+			color: #FFF;
+		}
+		.content .bord {
+			border-radius: 5px ;
+			width: 530px;
+			padding: 10px;
+		}
+		.content .nbord {
+			width: 510px;
+			padding: 20px;
+		}
+		.content button {
+			background-color: rgb(98, 187, 95);
+			width: 553px;
+			padding: 10px;
+			text-transform: uppercase;
+			color: #FFF;
+		}
+		#entete {
+			text-align: center;
+			color: #FFF;
+			margin-top: 50px;
+		}
+		#entete h3 {
+			font-size: 1.5em;
+		}
+		#entete p {
+			font-size: 1.5em;
+			margin-top: -5px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Formulaire d'inscription -->
+	<!-- Debut entete -->
+	<div id="entete">
+		<h3>freeCodeCamp Survery Form</h3>
+		<p>Thank you for taking the time to help us improve the platform</p>
+	</div>
+
+	<div class="content">
+		<form></form>
+		<label>Nom</label> <br>
+		<input class="bord" class="checkbox" type="text" placeholder="Entrer votre nom"><br><br>
+		<label>E-mail</label><br>
+		<input class="bord" type="text" placeholder="Entrer votre e-mail"><br><br>
+		<label>Age</label><br>
+		<input class="bord" type="age" placeholder="Age"><br><br>
+		<label>Which option best describes your current role</label><br>
+		<input class="bord" type="text" placeholder="Select current role"><br><br>
+		<label>Would you recommend freeCodeCamp to a friend</label><br>
+
+		<input type="radio" value="Definitely" checked> Definitely<br>
+		<input type="radio" value="Maybe"> Maybe<br>
+		<input type="radio" value="Not sure"> Not sure<br><br>
+
+		<label>What is your favorite feature of freeCodeCamp</label><br>
+		<input class="bord" type="text" placeholder="Select an option"><br><br>
+		<input type="checkbox"> Front-end Projects<br>
+		<input type="checkbox"> Back-end projects<br>
+		<input type="checkbox"> Data visualization<br>
+		<input type="checkbox"> Challenges<br>
+		<input type="checkbox"> Open Source Community<br>
+		<input type="checkbox"> Gitter help community<br>
+		<input type="checkbox"> Videos<br>
+		<input type="checkbox"> City Meetups<br>
+		<input type="checkbox">	Wiki<br>
+		<input type="checkbox"> Forum<br>
+		<input type="checkbox"> Additional Courses<br><br>
+
+		<label>Any comments or suggestions?</label><br>
+		<input class="nbord" type="text" placeholder="Enter your comment here..."><br><br>
+		<button>Submit</button>
+
+		
+	</div>
+
+</body>
+</html>

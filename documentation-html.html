@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Documentation HTMl5</title>
+</head>
+<!-- liaison fichier css -->
+<link rel="stylesheet" type="text/css" href="css/htmlStyle.css">
+<body>
+	<main>
+		<!-- debut menu lateral -->
+		<div id="sidebar">
+			<h2>DOCUMENTATION HTML5</h2>
+			<ul>
+				<li>
+					<a href="#intro">Introduction</a>
+				</li>
+				<li>
+					<a href="#fond">Les fondations HTML5</a>
+				</li>
+				<li>
+					<a href="#squel">Le squelette HTML</a>
+				</li>
+				<li>
+					<a href="#Para">Les Paragraphes </a>
+				</li>
+				<li>
+					<a href="#">les liens </a>
+				</li>
+				<li>
+					<a href="#">les Attributs</a>
+				</li>
+				<li>
+					<a href="#">les MUltimedias </a>
+				</li>
+				<li>
+					<a href="#">les BLocs </a>
+				</li>
+				<li>
+					<a href="#">les Tableaux </a>
+				</li>
+				<li>
+					<a href="#">les formulaires </a>
+				</li>
+				<li>
+					<a href="#">les Medias Query </a>
+				</li>
+				<li>
+					<a href="#">les API HTML5 </a>
+				</li>
+				<li>
+					<a href="#">le HTML5 Avancé </a>
+				</li>
+				<li>
+					<a href="#">les réferences </a>
+				</li>
+
+
+
+			</ul>
+			
+		</div>
+		<!-- fin menu lateral -->
+		<div id="content">
+			<div id="intro">
+			<h2 >INTRODUCTION AU HTML5</h2>
+			<p>
+				Le Web a été inventé par Tim Berners-Lee au début des années 1990. Pour créer des sites web, on utilise deux langages informatiques : HTML : permet d'écrire et organiser le contenu de la page (paragraphes, titres…) ; CSS : permet de mettre en forme la page (couleur, taille…). Il y a eu plusieurs versions des langages HTML et CSS. Les dernières versions sont HTML5 et CSS3. Le navigateur web est un programme qui permet d'afficher des sites web. Il lit les langages HTML et CSS pour savoir ce qu'il doit afficher. Il existe de nombreux navigateurs web différents : Google Chrome, Mozilla Firefox, Internet Explorer, Safari, Opera… Chacun affiche un site web de manière légèrement différente des autres navigateurs. Dans ce cours, nous allons apprendre à utiliser les langages HTML et CSS. Nous travaillerons dans un programme appelé « éditeur de texte » (Notepad++, jEdit, vim…).
+
+			</p>
+			</div>
+			<div id="fond">
+			<h2  >LES FONDATIONS</h2>
+			<p>
+					Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher. Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'est-à-dire des symboles &lt; et &gt;, comme ceci : &lt;balise&gt; À quoi est-ce qu'elles servent ? Elles indiquent la nature du texte qu'elles encadrent. Elles veulent dire par exemple : « Ceci est le titre de la page », « Ceci est une image », « Ceci est un paragraphe de texte », etc.
+					On distingue deux types de balises : les balises en paires et les balises orphelines. 
+					<h4>Les balises en paires</h4>
+						Elles s'ouvrent, contiennent du texte, et se ferment plus loin. V oici à quoi elles ressemblent :
+						Code : HTML  &lt;titre &gt;Ceci est un titre &lt;/titre &gt;
+						On distingue une balise ouvrante ( &lt;titre &gt;) et une balise fermante ( &lt;/titre &gt;) qui indique que le titre se termine. Cela signifie pour l'ordinateur que tout ce qui n'est pas entre ces deux balises… n'est pas un titre.
+						Code : HTML Ceci n'est pas un titre 
+						&lt;titre&gt;Ceci est un titre &lt;/titre&gt; Ceci n'est pas un titre
+						<h4>Les balises orphelines</h4>
+						Ce sont des balises qui servent le plus souvent à insérer un élément à un endroit précis (par exemple une image). Il n'est pas nécessaire de délimiter le début et la fin de l'image, on veut juste dire à l'ordinateur « Insère une image ici ».
+						Une balise orpheline s'écrit comme ceci :
+								Code : &lt;HTML image /&gt;
+
+			</p>
+			</div>
+			<div id="squel">
+				<h2 >LE SQUELETTE HTML	</h2>
+				<p>
+					&lt;!DOCTYPE html&gt; <br>	
+					&lt;html&gt;  <br>	
+					&lt;head&gt; <br>
+					&lt;meta charset="utf-8" /&gt; <br>
+					&lt;title&gt;Titre&lt;/title&gt;<br>
+					&lt;/head&gt; <br>
+					&lt;body&gt; <br>    
+					&lt;/body&gt;<br> 
+					&lt;/html&gt;
+					La toute première ligne s'appelle le doctype. Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML. Ce n'est pas vraiment une balise comme les autres (elle commence par un point d'exclamation), vous pouvez considérer que c'est un peu l'exception qui confirme la règle.<br>
+
+					&lt;html&gt;<br>
+					&lt;/html&gt;<br>
+					C'est la balise principale du code. Elle englobe tout le contenu de votre page. Comme vous pouvez le voir, la balise fermante &lt;/html&gt; <br>
+					se trouve tout à la fin du code !<br>
+
+					L'en-tête &lt;head&lt; : cette section donne quelques informations générales sur la page comme son titre, l'encodage (pour la gestion des caractères spéciaux), etc. 
+					Cette section est généralement assez courte. Les informations que contient l'en-tête ne sont pas affichées sur la page, ce sont simplement des informations générales
+					 à destination de l'ordinateur. Elles sont cependant très importantes ! <br>
+					 Le corps &lt;body&lt; : c'est là que se trouve la partie principale de la page. Tout ce que nous écrirons ici sera affiché à l'écran. C'est à l'intérieur du corps que nous écrirons la majeure partie de notre code.  
+
+				</p>
+			</div>
+			<div id="Para">
+				<h2>LES PARAGRAPHES	</h2>
+					<p>
+						La plupart du temps, lorsqu'on écrit du texte dans une page web, on le fait à l'intérieur de paragraphes. Le langage HTML propose justement la balise &lt;p&lt; pour délimiter les paragraphes. Code : HTML &lt;p&lt;Bonjour et bienvenue sur mon site !&lt;/p&lt;
+						&lt;p&lt;signifie « Début du paragraphe » ; </p> signifie « Fin du paragraphe ». Comme je vous l'ai dit au chapitre précédent, on écrit le contenu du site web entre les balises &lt;body&lt;&lt;/body&lt;. Il nous suffit donc de mettre notre paragraphe entre ces deux balises et nous aurons enfin notre première vraie page web avec 
+						du texte !
+					</p>
+			</div>
+			<div id="lien	">
+				<h2>LES LIENS	</h2>
+
+				</div>	
+
+		</div>
+	</main>
+
+</body>
+</html>
